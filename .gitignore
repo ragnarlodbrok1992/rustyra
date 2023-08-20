@@ -1,0 +1,10 @@
+# Local bat file for Visual C Variables
+vcvars.bat
+
+# Output from msvc and/or ml64
+*.exe
+*.obj
+
+# Added by cargo
+/target
+

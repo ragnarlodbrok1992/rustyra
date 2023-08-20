@@ -1,0 +1,9 @@
+// Line comment
+
+.data: // Section token - data structures
+  stack MAIN
+
+.code: // Section token - code
+  (MAIN) // Load code into said data structure
+  1 2 add print
+

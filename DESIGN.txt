@@ -1,0 +1,13 @@
+Rustyra - concatenative multi-stack language.
+
+Language - a way to talk to computer. We will change nothing here.
+
+Concatenative - tokens are read from left to right, up to down. We
+  don't have to build AST (abstract syntax tree). It's like a stream
+  of commands and other tokens that we will feed to our compiler.
+
+Multi-stack - there is one main stack. You can define other stacks if
+  you want and have them communicate at the bottom (you can link some stacks
+  to other stacks) so feeding data into operands can happen in many ways
+  and output of some operations can land in different stacks.
+

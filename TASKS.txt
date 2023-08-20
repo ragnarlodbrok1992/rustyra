@@ -1,0 +1,16 @@
+RUST stuff:
+- [ ]: Rust tutorial: reading files
+- [ ]: Rust tutorial: parsing content of files
+  - [ ]: Make two stacks
+
+Windows stuff:
+- [ ]: Minimal MASM program for windows
+  - [ ]: Make some listing (asm) files from C program to see how they look
+
+Rustyra language stuff:
+- [ ]: Make simple design for language in seperate file
+- [ ]: Lexical analysis
+  - [ ]: Tokens - left and right ! for some of them (those that make pushes/pos out of the deque)
+    - [ ]: Literals - should those have '!' modifier?
+    - [ ]: Operators - should those have '!' modifier?
+
