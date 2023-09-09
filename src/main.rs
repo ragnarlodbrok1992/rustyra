@@ -2,6 +2,18 @@ use std::env;
 use std::fs::File;
 use std::io::prelude::*;
 
+// Put source code inside - get list of tokens from first to last
+// outside
+// TODO: token should be it's own type, not strings
+// should we do it after having list of tokens?
+// I think so, we can for ex. drop all comments
+fn parser(input_string: String) -> Vec<String> {
+    // Parse tokens
+    // Drop comments
+
+    return vec!["token1".to_string(), "token2".to_string()];
+}
+
 fn main() -> std::io::Result<()> {
     println!("Rustyra compiler - development version.");
 
@@ -35,9 +47,20 @@ fn main() -> std::io::Result<()> {
         source_file = File::open(source_file_path)?;
         let mut source_file_contents = String::new();
         source_file.read_to_string(&mut source_file_contents)?;
-        // return Ok(());
+
+        // Check what we load
+        // dbg!(source_file);
+        // dbg!(source_file_contents);
+
+        // println!("Source_file: {}", source_file);
+
     } else {
         // No source file is provided - quit
+    }
+
+    // All is good - flow through tokens and do stuff!
+    for token in parser("Nothing".to_string()) {
+        println!("Token: {}", token);
     }
 
     println!("Everything went good - exiting.");
