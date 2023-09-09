@@ -8,3 +8,6 @@ vcvars.bat
 # Added by cargo
 /target
 
+# CTags
+tags
+
